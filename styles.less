@@ -1,0 +1,48 @@
+@navbar-height: 3.2em;
+.navigation {
+    height: @navbar-height;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            display: inline-block;
+            padding: 0 1em;
+            height: @navbar-height;
+            line-height: @navbar-height;
+            vertical-align: middle;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            
+            &:hover {
+                font-weight: bolder;
+                border-color: white;
+            }
+        }
+        
+    }
+}
+
+.info-cell-container {
+    text-align: center;
+    background-color: lightslategrey;
+    color: white;
+    
+    .info-cell {
+        height: 12em;
+        position: relative;
+        
+        .data {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
